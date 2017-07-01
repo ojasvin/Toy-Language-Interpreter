@@ -2,14 +2,14 @@ n:=2;
 while n>0 do
 	a:=n*2+1;
 	while a>0 do
-		print("yo ",a);
+		print("Give me a break ",a);
 		println();
 		a:=a-1;
 	done;
 	n:=n-1;
 done;
 if a==1 then
-	println("Machaya");
+	println("Hello Sun");
 else
-	println("Kuch nhi machaya");
+	println("Hello Moon");
 fi;	
