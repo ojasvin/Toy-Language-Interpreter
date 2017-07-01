@@ -1,0 +1,14 @@
+n:=2;
+a:=n*2+1;
+while n>0 do
+	while a>0 do
+		println("yo ",a);
+		a:=a-1;
+	done;
+	n:=n-1;
+done;
+if a==0 then
+	println("Machaya");
+else
+	println("Kuch nhi machaya");
+fi;	
