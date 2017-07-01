@@ -84,10 +84,12 @@ class IfElse:
 		condition=condition[len("if"):i]
 		#print(condition)
 		if Expression.eval(condition):
-			c=CompoundStatement(self.statements[1:l-1])
+			c=CompoundStatement(self.statements[1:self.statements.index('else')])
 			c.eval()
 
-
+		if (not Expression.eval(condition)): 	
+			c=CompoundStatement(self.statements[self.statements.index('else'):self.statements.index('fi;')])
+			c.eval()
 
 class Assignment:
 	def __init__(self,statement):
@@ -209,9 +211,12 @@ class Println:
 		br=self.text.index('(')
 		cb=self.text.index(')')
 		val=self.text[br+1:cb]
-		words=val.split(",")        
-		for i in range (0,len(words)):
-			self.recprint(words[i])
+		if len(val)==0:
+			print()
+		else:	
+			words=val.split(",")        
+			for i in range (0,len(words)):
+				self.recprint(words[i])
 
 
 	def recprint(self,word):
@@ -234,9 +239,12 @@ class Print:
 		br=self.text.index('(')
 		cb=self.text.index(')')
 		val=self.text[br+1:cb]
-		words=val.split(",")        
-		for i in range (0,len(words)):
-			self.recprint(words[i])
+		if len(val)==0:
+			print(end="")
+		else:
+			words=val.split(",")        
+			for i in range (0,len(words)):
+				self.recprint(words[i])
 
 
 	def recprint(self,word):
