@@ -1,5 +1,5 @@
 # Interpreter
-Build on python :blush:
+Build on python 
 * This interpreter is based on Python Object Oriented Programming. 
   The **`eval`** method in the above interpreter works similar to python **`eval`** method and evaluates the parsed tree/structure of the code.
 * Basic **toy language** which is parsed and interpreted using **python3** is as follows:
