@@ -1,5 +1,5 @@
 # Python Interpreter 
-* Python Interpreter for a toy language build in Python3 based on concepts of Object Oriented Programming.
+* Python Interpreter for a toy language build in Python3 based on concepts of Object Oriented Programming.Both versions have   their own code.imp files to showcase different functionalities.
  
  
 * Functionalities added
