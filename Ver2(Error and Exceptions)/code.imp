@@ -1,0 +1,17 @@
+n:=2;
+b:=5;
+while n>0 do
+	a:=n*2+1;
+	while a>0 do
+		print("yo ",a);
+		println();
+		a:=a-1;
+	done;
+	n:=n-1;
+done;
+a:=a+1;
+if a==1 then
+	println("Machaya",b/a);
+else
+	println("Nahi Machaya")
+fi;
