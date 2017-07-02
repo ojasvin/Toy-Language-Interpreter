@@ -9,7 +9,6 @@ while n>0 do
 	done;
 	n:=n-1;
 done;
-a:=a+1;
 if a==1 then
 	println("Machaya",b/a);
 else
